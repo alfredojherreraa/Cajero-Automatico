@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CAJERO AUTOMATICO</title>
+</head>
+<body>
+    <main class="container">
+        <article>
+            <section>
+                <h2>Usuario</h2>
+                <input type="text" id="usuario">
+                <h2>Contraseña</h2>
+                <input type="number" id="contraseña">
+                <button onclick="validarUsuario()">INGRESAR</button>
+        </article>
+        <hr>
+        <article>
+            <section>
+                <h2>Movimiento</h2>
+                <button id ="butsal" disabled="false" onclick="consultarSaldo()">SALDO</button>
+                <button id ="butcon" disabled="false" onclick="ingresarDinero()">CONSIGNAR</button>
+                <button id ="butret" disabled="false" onclick="retirarDinero()">RETIRAR</button>
+        </article>
+        
+    </main>
+
+<script src="Cajero.js"></script>
+</body>
+</html>
